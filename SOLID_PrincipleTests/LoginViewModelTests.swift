@@ -5,6 +5,11 @@
 //  Created by Sujeet kumar on 17/08/26.
 //
 
+
+//8. Where this pays off — testing
+//
+//This is the real reward. Because everything depends on protocols, you can write fast, reliable unit tests with no network calls:
+
 import XCTest
 
 final class LoginViewModelTests: XCTestCase {
