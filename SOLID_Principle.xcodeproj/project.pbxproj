@@ -29,9 +29,48 @@
 		BABEE8E8302DFB5900218713 /* SOLID_PrincipleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOLID_PrincipleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BABEE902302E0A3200218713 /* Exceptions for "SOLID_Principle" folder in "SOLID_PrincipleTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Data/AuthService.swift,
+				Data/EnterpriseLoginValidator.swift,
+				Data/KeychainSessionStore.swift,
+				Data/LoginValidator.swift,
+				Domain/LoginCredentials.swift,
+				Domain/Repository/APIError.swift,
+				Domain/Repository/AuthServiceProtocol.swift,
+				Domain/User.swift,
+				Presentation/LoginViewController.swift,
+				Presentation/LoginViewModel.swift,
+			);
+			target = BABEE8DD302DFB5900218713 /* SOLID_PrincipleTests */;
+		};
+		BABEE903302E0A3200218713 /* Exceptions for "SOLID_Principle" folder in "SOLID_PrincipleUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Data/AuthService.swift,
+				Data/EnterpriseLoginValidator.swift,
+				Data/KeychainSessionStore.swift,
+				Data/LoginValidator.swift,
+				Domain/LoginCredentials.swift,
+				Domain/Repository/APIError.swift,
+				Domain/Repository/AuthServiceProtocol.swift,
+				Domain/User.swift,
+				Presentation/LoginViewController.swift,
+				Presentation/LoginViewModel.swift,
+			);
+			target = BABEE8E7302DFB5900218713 /* SOLID_PrincipleUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BABEE8D1302DFB5500218713 /* SOLID_Principle */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BABEE902302E0A3200218713 /* Exceptions for "SOLID_Principle" folder in "SOLID_PrincipleTests" target */,
+				BABEE903302E0A3200218713 /* Exceptions for "SOLID_Principle" folder in "SOLID_PrincipleUITests" target */,
+			);
 			path = SOLID_Principle;
 			sourceTree = "<group>";
 		};
@@ -414,7 +453,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -446,7 +485,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;

@@ -55,7 +55,20 @@ struct ContentView: View {
     }
 }
 
+//7. Wiring it up — composition root
+//swift
+func makeLoginViewController() -> LoginViewController {
+    let viewModel = LoginViewModel(
+        authService: AuthService(url: ""),
+        sessionStore: KeychainSessionStore(),
+        validator: LoginValidator()
+    )
+    return LoginViewController(viewModel: viewModel)
+}
+
 #Preview {
     ContentView()
         .modelContainer(for: Item.self, inMemory: true)
 }
+
+
